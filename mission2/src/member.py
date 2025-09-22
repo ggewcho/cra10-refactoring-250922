@@ -47,7 +47,8 @@ class Member:
             return True
 
     def __repr__(self):
-        score = self.score()
+        score = self.score
         grade = GradeFactory.create_grade(score)
 
         return f"NAME : {self.name}, POINT : {score}, GRADE : {grade}"
+
